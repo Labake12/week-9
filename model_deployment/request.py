@@ -1,5 +1,5 @@
 import requests
 
-url = 'https://localhost:5000/predict'
-res = requests.post(url, json={'text': 'I liked the movie'})
+url = 'https://fcae-102-89-32-179.ngrok-free.app/predict'
+res = requests.post(url, json={'text': 'The movie is just bad'})
 print(res.text)

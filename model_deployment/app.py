@@ -8,7 +8,7 @@ app = Flask(__name__)
 model = joblib.load('sentiment_model.pkl')
 vectorizer = joblib.load("bow.pkl")
 # create a route that manages user request and does sentiment prediction
-@app.route('/ping')
+@app.route('/')
 def home():
     return 'Welcome to Sentiment Analysis API!'
 @app.route('/predict', methods=['POST'])
